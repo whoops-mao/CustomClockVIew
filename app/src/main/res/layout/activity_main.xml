@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <com.rielmao.customclockview.MyClockView
+        android:padding="16dp"
         android:id="@+id/clock"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

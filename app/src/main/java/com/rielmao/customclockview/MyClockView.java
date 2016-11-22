@@ -72,7 +72,7 @@ public class MyClockView extends SurfaceView implements SurfaceHolder.Callback, 
         mHandsPaint.setColor(Color.BLACK);
         mHandsPaint.setAntiAlias(true);
         mHandsPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-        mHandsPaint.setTextSize(22);
+        mHandsPaint.setTextSize(42);
         mHandsPaint.setTextAlign(Paint.Align.CENTER);
 
         setFocusable(true);
@@ -83,7 +83,7 @@ public class MyClockView extends SurfaceView implements SurfaceHolder.Callback, 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
         flag = true;
-        mThread.start();
+        new Thread(this).start();
     }
 
     @Override
@@ -107,7 +107,7 @@ public class MyClockView extends SurfaceView implements SurfaceHolder.Callback, 
             end = System.currentTimeMillis();
             if (end - start < 1000) {
                 try {
-                    mThread.sleep(1000 - (end - start));
+                    Thread.sleep(1000 - (end - start));
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
