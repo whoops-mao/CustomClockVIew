@@ -1,6 +1,6 @@
 # CustomClockVIew
 
-![img](https://github.com/whoops-mao/CustomClockVIew/blob/master/image-folder/GIF.gif)
+![img](https://github.com/whoops-mao/CustomClockVIew/blob/master/image-folder/img.gif)
 
 ##MeasureSpace
 1. MeasureSpec.UNSPECIFIED -> 未指定尺寸
