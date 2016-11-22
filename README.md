@@ -1,4 +1,7 @@
 # CustomClockVIew
+
+![img](https://github.com/whoops-mao/CustomClockVIew/blob/master/image-folder/GIF.gif)
+
 ##MeasureSpace
 1. MeasureSpec.UNSPECIFIED -> 未指定尺寸
 1. MeasureSpec.EXACTLA -> 精确尺寸，控件的宽高指定大小或者为FILL_PARENT
