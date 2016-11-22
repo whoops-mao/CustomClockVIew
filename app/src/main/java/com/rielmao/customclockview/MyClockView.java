@@ -19,7 +19,6 @@ import java.util.Calendar;
  */
 
 public class MyClockView extends SurfaceView implements SurfaceHolder.Callback, Runnable {
-    private Canvas mCanvas;
     //圆和刻度的画笔
     private Paint mBgPaint;
     //指针的画笔
@@ -159,7 +158,7 @@ public class MyClockView extends SurfaceView implements SurfaceHolder.Callback, 
     }
 
     private void draw() {
-        mCanvas = mHolder.lockCanvas();//得到画布
+        Canvas mCanvas = mHolder.lockCanvas();
         try {
             if (mCanvas != null) {
                 mCanvas.drawColor(Color.WHITE);//刷屏
